@@ -1,10 +1,11 @@
 name: Force push branch to GitLab
 
-on:
-  push:
-    branches:
-      - "**"
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - "**"
+# 
 concurrency:
   group: gitlab-mirror-${{ github.ref }}
   cancel-in-progress: true

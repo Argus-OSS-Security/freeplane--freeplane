@@ -1,11 +1,12 @@
 name: Build and Test
-on:
-  push:
-  pull_request:
-  workflow_dispatch:
-  schedule:
-    - cron: '0 6 * * 1'  # Each Monday at 06:00 UTC
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#   pull_request:
+#   workflow_dispatch:
+#   schedule:
+#     - cron: '0 6 * * 1'  # Each Monday at 06:00 UTC
+# 
 jobs:
   build:
     runs-on: ${{ matrix.os }}

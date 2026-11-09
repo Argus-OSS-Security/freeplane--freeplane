@@ -1,8 +1,9 @@
 name: Delete branch on GitLab
 
-on:
-  delete:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   delete:
+# 
 jobs:
   delete-branch:
     if: |
